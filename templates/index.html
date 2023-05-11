@@ -39,6 +39,9 @@
               let title = articles[i]['title'];
               let content = articles[i]['content'];
               let file = articles[i]['file']; 
+
+              let time = articles[i]['time;']  || '????.??.??';
+
               let profile = articles[i]['profile'];
               let temp_html =`
               <div class="col-4">
@@ -48,7 +51,7 @@
                     <img src="../static/image-profile.png" class="card-img-top rounded-circle <div data-v-2b4f54d0="" class="v-avatar" style="height: 48px; min-width: 48px; width: 48px;"  alt="...">
                     <h5 class="card-title">${title}</h5>
                     <p class="card-text">${content}</p>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">${time}</h6>
                   </div>
               </div>
               `;
